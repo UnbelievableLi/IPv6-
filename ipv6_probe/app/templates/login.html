@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}登录{% endblock %}
+
+{% block page_content %}
+<div class="container-fluid">
+      <div class="row">
+<ul class="nav nav-sidebar">
+    <br/><br/>
+    <h1>登录</h1>
+</ul>
+      </div>
+<div class="col-md-4">
+{{ wtf.quick_form(form) }}
+</div>
+</div>
+{% endblock %}
